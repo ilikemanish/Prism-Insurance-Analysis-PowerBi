@@ -1,7 +1,7 @@
 
 # 🛡️ Prism Insurance Analysis Dashboard
 
-![Project Banner](ICONS/prism_insurance_logo.png)
+![Project Banner](prism logo.png)
 
 ## 📌 Project Overview
 
