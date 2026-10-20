@@ -1,23 +1,33 @@
 
 # 🛡️ Prism Insurance Analysis Dashboard
 
-## 📌 Project Overview
+![Prism Insurance Logo](<prism logo.png>)
 
-The **Prism Insurance Analysis Dashboard** is a data analytics project developed using Microsoft Power BI to analyze insurance premiums, coverage amounts, claim statuses, and customer demographics.
+<p align="center">
+  <b>Insurance Data Analysis | SQL Server | Power BI | DAX</b>
+</p>
 
-This project was developed as part of the **Complete Data Analyst Bootcamp: From Basic to Advanced** course on Udemy.
-
-The main objective is to transform raw insurance data into meaningful business insights through data cleaning, SQL queries, DAX calculations, and interactive visualizations.
+<p align="center">
+  An interactive insurance analytics project focused on premiums, coverage, claims, and customer demographics.
+</p>
 
 ---
 
+## 📌 Project Overview
+
+The **Prism Insurance Analysis Dashboard** is a data analytics project developed to analyze insurance performance, customer demographics, policy premiums, coverage amounts, and claim statuses.
+
+The project uses Microsoft SQL Server for data retrieval and SQL queries, Power Query for data transformation, and Microsoft Power BI for dashboard development and visualization.
+
+This project was developed as part of the **Complete Data Analyst Bootcamp: From Basic to Advanced** course on Udemy.
+
 ## 🎯 Project Objectives
 
-- Analyze insurance premium and coverage trends.
-- Track claim amounts and claim statuses.
-- Compare premiums across different policy types.
-- Understand customer demographics and claim patterns.
-- Identify opportunities to improve claims management.
+- Analyze insurance premiums and coverage amounts.
+- Compare premium contributions across policy types.
+- Monitor settled, pending, and rejected claims.
+- Understand claim patterns across customer age groups.
+- Identify data quality issues.
 - Generate actionable business recommendations.
 
 ---
@@ -27,14 +37,20 @@ The main objective is to transform raw insurance data into meaningful business i
 | Tool | Purpose |
 |---|---|
 | Microsoft SQL Server | Data retrieval and SQL queries |
-| Microsoft Power BI | Interactive dashboard development |
+| Microsoft Power BI | Dashboard development and visualization |
 | Power Query | Data cleaning and transformation |
-| DAX | KPI development and calculations |
+| DAX | KPI calculations and measures |
 | CSV | Source dataset |
 
 ---
 
-## 📊 Key Performance Indicators (KPIs)
+## 📊 Dashboard Preview
+
+![Prism Insurance Dashboard Preview](<Dashboard Preview.png>)
+
+---
+
+## 📈 Key Performance Indicators (KPIs)
 
 | KPI | Value |
 |---|---:|
@@ -43,17 +59,11 @@ The main objective is to transform raw insurance data into meaningful business i
 | Total Claim Amount | 16.91M |
 | Total Records | 10,004 |
 
-> **Note:** Values use the source dataset's units. The currency is not specified.
+> **Note:** Values are expressed in the source dataset's units. The currency is not specified.
 
 ---
 
-## 📈 Dashboard Preview
-
-![Prism Insurance Dashboard](Dashboard Preview.png)
-
----
-
-## 🔍 Business Analysis
+## 🔍 Business Analysis and Insights
 
 ### 1. Premium Analysis by Policy Type
 
@@ -65,7 +75,7 @@ The main objective is to transform raw insurance data into meaningful business i
 | Life | 0.73M |
 | Home | 0.60M |
 
-**Key Insight:** Travel insurance contributes the highest premium among the listed policy types.
+**Insight:** Travel insurance contributes the highest premium among the listed policy types.
 
 ### 2. Claim Status Analysis
 
@@ -75,7 +85,9 @@ The main objective is to transform raw insurance data into meaningful business i
 | Pending | 2,263 | 6.81M |
 | Rejected | 4,355 | 0 |
 
-**Key Insight:** Pending claims require further investigation and monitoring to improve claim processing efficiency.
+**Insight:** Pending claims represent an important area for further investigation and processing improvements.
+
+**Data note:** The dataset contains missing claim dates and zero claim amounts associated with rejected claims. These values should be validated before drawing conclusions about rejection reasons.
 
 ### 3. Claim Analysis by Age Group
 
@@ -85,29 +97,29 @@ The main objective is to transform raw insurance data into meaningful business i
 | Adults (31–60) | 7.48M |
 | Older Adults (above 60) | 6.39M |
 
-**Key Insight:** The 31–60 age group has the highest total claim amount among the three age groups.
+**Insight:** The 31–60 age group has the highest total claim amount among the three age groups.
 
 ---
 
 ## 💡 Business Recommendations
 
-1. **Monitor Pending Claims:** Track claim ageing and establish service-level targets to reduce delays.
+1. **Monitor Pending Claims:** Track claim ageing and establish service-level targets to improve processing efficiency.
 
-2. **Analyze Rejected Claims:** Add rejection reason codes to identify common causes and potential process improvements.
+2. **Investigate Rejected Claims:** Record rejection reasons to identify common causes and potential process improvements.
 
-3. **Review Travel Insurance:** Investigate the high premium contribution from travel insurance policies.
+3. **Review Travel Insurance:** Investigate the high premium contribution from travel policies.
 
-4. **Improve Data Quality:** Validate duplicate records, missing claim dates, and inconsistent values.
+4. **Improve Data Quality:** Check duplicate records, missing claim dates, and inconsistent values.
 
-5. **Track Additional KPIs:** Include settlement rate, rejection rate, average claim amount, and pending claim amount.
+5. **Track Additional KPIs:** Add settlement rate, rejection rate, average claim amount, and pending claim amount.
 
-6. **Monitor Performance Regularly:** Refresh the dashboard and review trends to support data-driven decisions.
+6. **Maintain Dashboard Accuracy:** Validate source data and refresh calculations regularly.
 
 ---
 
 ## 💻 SQL Analysis Example
 
-The following is an illustrative query. Update the table and column names to match your actual SQL Server database.
+The following query is an illustrative example. Update the table and column names to match your actual SQL Server database.
 
 ```sql
 SELECT
@@ -125,11 +137,11 @@ ORDER BY TotalPremium DESC;
 ## ⚙️ Project Workflow
 
 1. Retrieve insurance data using SQL Server.
-2. Clean and transform the dataset using Power Query.
-3. Create calculated measures and KPIs using DAX.
-4. Design interactive charts, tables, and dashboard visuals.
-5. Analyze insurance performance and claim trends.
-6. Develop business insights and recommendations.
+2. Clean and transform data using Power Query.
+3. Create KPIs and calculated measures using DAX.
+4. Develop interactive charts and dashboard visuals in Power BI.
+5. Analyze policy premiums, coverage, and claim patterns.
+6. Present findings and business recommendations.
 
 ---
 
@@ -139,22 +151,19 @@ ORDER BY TotalPremium DESC;
 Prism-Insurance-Analysis-PowerBi/
 │
 ├── README.md
-├── ICONS/
-│   └── prism_insurance_logo.png
 ├── InsuranceData.csv
 ├── Prism Insurance.pbix
-└── Final_Dashboard.jpg
+├── Dashboard Preview.png
+└── prism logo.png
 ```
-
-**Important:** Ensure these filenames and paths match the files uploaded to your repository. GitHub will not display images if the paths are incorrect.
 
 ---
 
 ## 🎓 Course Attribution
 
-This project was developed as part of the **Complete Data Analyst Bootcamp: From Basic to Advanced** course on Udemy.
+Developed as part of the **Complete Data Analyst Bootcamp: From Basic to Advanced** course on Udemy.
 
-The project demonstrates practical skills in data retrieval, data transformation, dashboard development, KPI creation, and business analysis.
+This project demonstrates practical skills in SQL, data transformation, DAX, Power BI dashboard development, and business analysis.
 
 ---
 
@@ -162,7 +171,7 @@ The project demonstrates practical skills in data retrieval, data transformation
 
 I am an aspiring Data Analyst with knowledge of Excel, SQL, Power BI, Python, data cleaning, and data visualization.
 
-I enjoy transforming raw data into meaningful insights that help businesses understand performance and make informed decisions.
+I enjoy transforming raw data into meaningful insights that support better business decisions.
 
 ### 🔗 Connect With Me
 
