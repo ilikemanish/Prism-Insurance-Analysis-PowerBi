@@ -1,8 +1,6 @@
 
 # 🛡️ Prism Insurance Analysis Dashboard
 
-![Project Banner](prism logo.png)
-
 ## 📌 Project Overview
 
 The **Prism Insurance Analysis Dashboard** is a data analytics project developed using Microsoft Power BI to analyze insurance premiums, coverage amounts, claim statuses, and customer demographics.
@@ -51,7 +49,7 @@ The main objective is to transform raw insurance data into meaningful business i
 
 ## 📈 Dashboard Preview
 
-![Prism Insurance Dashboard](Final_Dashboard.jpg)
+![Prism Insurance Dashboard](dashboard preview.jpg)
 
 ---
 
