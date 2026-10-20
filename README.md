@@ -49,7 +49,7 @@ The main objective is to transform raw insurance data into meaningful business i
 
 ## 📈 Dashboard Preview
 
-![Prism Insurance Dashboard](dashboard preview.jpg)
+![Prism Insurance Dashboard](Dashboard preview.jpg)
 
 ---
 
